@@ -10,6 +10,7 @@
    crossorigin="anonymous" />
 </head>
 <body>
+   <!-- Pierwszy program -->
    <div class="container">
       <h1>1st Program</h1>
       <p><em>Type in two numbers, then the program will show you the larger one of them</em></p>
@@ -29,6 +30,36 @@
             <p class="result" style="color: black;"></p>
          </div>
       </div>
+   </div>
+   <br><hr><br>
+   <!-- Drugi program -->
+   <div class="container">
+      <div class="row">
+         <h2>2nd Program</h2>
+         <p><em>Program wyprowadzający wszystkie lata przestępne, program
+             przyjmuje rok początkowy i końcowy od użytkownika.</em></p>
+      </div>
+      <div class="row">
+         <div class="one columns" style="padding-left: 25px;"><h5>Od:</h5></div>
+         <div class="two columns" style="margin-right: 20px;">
+            <input type="text" id="firstYear" placeholder="np. 1900">
+         </div>   
+         <div class="one columns" style="padding-left: 25px;"><h5>Do:</h5></div>   
+         <div class="three columns">
+            <input type="text" id="secondYear" placeholder="np. 2021">
+         </div> 
+         <div class="two columns">
+            <input type="submit" class="button-primary" value="calculate" id="submit-btn">
+         </div> 
+      </div>
+      <table>
+         <thead>
+            <tr>
+               <th>Rok przestępny</th>
+            </tr>
+         </thead>
+         <tbody class="wynik"></tbody>
+      </table>       
    </div>
 
    <script src="main.js"></script>
